@@ -4,11 +4,12 @@ import java.sql.Date;
 
 public class Ingresso {
 	
-	String Nome;
-	Double RG;
-	Date dataCompra;
-	String Artista;
-	String local;
+	// atributo 
+	private String Nome;
+	private Double RG;
+	private Date dataCompra;
+	private String Artista;
+	private String local;
 	
 	public Ingresso(String nome, Double rG, Date dataCompra, String artista, String local) {
 		super();
@@ -20,7 +21,8 @@ public class Ingresso {
 	}
 	
 	public void visualizar() {
-		System.out.println("\nNome do cliente: "+Nome);
+		System.out.println("\n Dados do comprador:");
+		System.out.println("Nome do cliente: "+Nome);
 		System.out.println("RG: "+RG);
 		System.out.println("Data da compra: "+dataCompra);
 		System.out.println("Artista do espetaculo: "+Artista);

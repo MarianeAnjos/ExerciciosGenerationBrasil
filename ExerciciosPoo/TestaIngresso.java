@@ -12,6 +12,14 @@ public class TestaIngresso {
 		
 		ingresso1.visualizar();
 		ingresso2.visualizar();
+	
+	
+	Vip ingressoVip = new Vip("Raffa",123.654, Date(),"Lana Delray" , "São Paulo", 125);
+	MeiaEntrada ingressoMeia = new MeiaEntrada("Noah", 789.564, Date(),"Power  Ranger", "Campinas", 10);
+	
+	ingressoVip.visualizar();
+	ingressoMeia.visualizarMeia();
+	
 	}
 
 	public static Date Date() {

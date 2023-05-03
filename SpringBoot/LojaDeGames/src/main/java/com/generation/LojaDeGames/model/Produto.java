@@ -1,7 +1,7 @@
 package com.generation.LojaDeGames.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.generation.lojagames.model.Usuario;
+import com.generation.LojaDeGames.model.Usuario;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

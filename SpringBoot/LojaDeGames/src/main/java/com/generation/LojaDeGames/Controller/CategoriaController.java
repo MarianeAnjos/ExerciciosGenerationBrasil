@@ -1,4 +1,4 @@
-package com.generation.lojagames.Controller;
+package com.generation.LojaDeGames.Controller;
 
 import java.util.List;
 import java.util.Optional;
@@ -18,8 +18,8 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
+import com.generation.LojaDeGames.model.Categoria;
 import com.generation.LojaDeGames.repository.CategoriaRepository;
-import com.generation.lojagames.model.Categoria;
 
 import jakarta.validation.Valid;
 

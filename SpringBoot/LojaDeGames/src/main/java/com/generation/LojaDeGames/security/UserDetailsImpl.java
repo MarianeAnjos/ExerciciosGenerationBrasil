@@ -6,7 +6,7 @@ import java.util.List;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import com.generation.lojagames.model.Usuario;
+import com.generation.LojaDeGames.model.Usuario;
 
 public class UserDetailsImpl implements UserDetails {
 

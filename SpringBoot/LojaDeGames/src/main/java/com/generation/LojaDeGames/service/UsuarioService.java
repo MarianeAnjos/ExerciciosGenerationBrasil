@@ -11,10 +11,10 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
+import com.generation.LojaDeGames.model.Usuario;
 import com.generation.LojaDeGames.model.UsuarioLogin;
 import com.generation.LojaDeGames.repository.UsuarioRepository;
 import com.generation.LojaDeGames.security.JwtService;
-import com.generation.lojagames.model.Usuario;
 
 
 //camada intermediaria, que contém um nivel a mais de processamento antes de mandar para o banco 
@@ -37,7 +37,7 @@ public class UsuarioService {
 
 		usuario.setSenha(criptografarSenha(usuario.getSenha()));
 
-		return Optional.of(usuarioRepository.save(usuario));
+		return Optional.of(UsuarioRepository.save(usuario));
 	
 	}
 
@@ -52,7 +52,7 @@ public class UsuarioService {
 
 			usuario.setSenha(criptografarSenha(usuario.getSenha()));
 
-			return Optional.ofNullable(usuarioRepository.save(usuario));
+			return Optional.ofNullable(UsuarioRepository.save(usuario));
 			
 		}
 
